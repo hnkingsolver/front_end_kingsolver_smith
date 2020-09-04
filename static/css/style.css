@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    background: #333333;
+    opacity: 1;
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-image: url("../assets/SVG/background.svg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+  }
+  
+  .img_logo {
+    max-width: 90px;
+    /* height: 112px;
+    margin-top: 20px; */
+  }
+  
+  .up {
+      margin-top: -50px;
+  }
+  
+  .curve {
+      border-radius: 10px;
+      width: 80%;
+  }
+  
+  header {
+      background-repeat: no-repeat;
+  }
+  .background_circle {
+      width: 20%;
+      margin-top: -90px;
+  }
+  
+  .button {
+      display: inline-block;
+      width: 120px;
+      height: 25px;
+      border-radius: 15px;
+      background-color: #9E97A3;
+      border-style: none;
+      padding-top: 2px;
+  }
+  
+  .avi_img {
+      width: 76%;
+  }
+  
+  footer {
+      backdrop-filter: blur(15px);
+  }
+  
+  .n{
+      width: 30rem;
+      height: 20rem;
+      border-radius: 40px;
+  }
+  
+  
+  
+  /* THE FOOTER NAV */
+  .ul_footer {
+      display: inline-grid;
+      grid-auto-flow: row;
+      grid-gap: 24px;
+      justify-items: center;
+      margin: auto;
+      list-style: none;
+    }
+  
+  
+    
+    @media (min-width: 500px) {
+      .ul_footer {
+        grid-auto-flow: column;
+      }
+    }
+    
+    .li_footer {
+      text-decoration: none;
+  }
+    .a_footer {
+      color: white;
+      text-decoration: none;
+      
+    }
+    
+    
+    .li_footer:last-child {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    
+    .li_footer:hover ~ li p {
+      animation: wave-animation 0.3s infinite;
+    }
+  
+    @keyframes wave-animation {
+      0%,
+      100% {
+        transform: rotate(0deg);
+      }
+      25% {
+        transform: rotate(20deg);
+      }
+      75% {
+        transform: rotate(-15deg);
+      }
+    }
+  
+  
+    /* THE MODAL SECTION!!! */
+    /* The Modal (background) */
+  .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content/Box */
+    .modal-content {
+      background-color: #303030f0;
+      border-radius: 10px;
+      margin: 20% auto; /* 15% from the top and centered */
+      padding: 20px;
+      width: 20%; /* Could be more or less, depending on screen size */
+      color: white;
+    }
+    
+    /* The Close Button */
+    .close {
+      color: rgb(162, 160, 160);
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+      color: rgb(217,182,180);
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    /* MODAL PULSE */
+  
+    .pulse {
+      animation: pulse-animation 2s infinite;
+    }
+  
+  
+    @keyframes pulse-animation {
+      0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.646);
+      }
+      100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+      }
+    }
+  
+  
+  /* LEARN BUTTON */
+  .button_learn {
+      background-color: #333333;
+      padding: 10px;
+      padding-right: 35px;
+      padding-left: 35px;
+      border-radius: 5px;
+      border-style: none;
+  }
+  
+  .button_learn:hover {
+      opacity: 50%;
+  }
+  
+  
+  /* LOGOS FOR PACKAGES */
+  .tag_logo {
+      height: 64px;
+  }
+  
+  .triangle_logo {
+      height: 62px;
+  }
+  
+  .polygon_logo {
+      height: 62px;
+  }
+  
+  /* FOR RANDOM VECTOR */
+  .random {
+      font-size: 100px;
+      
+  }
+  
+  
