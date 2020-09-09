@@ -218,3 +218,7 @@ footer {
   max-width: 16rem;
   width: 15rem;
 }
+
+.w2:hover {
+  opacity: 40%;
+}
