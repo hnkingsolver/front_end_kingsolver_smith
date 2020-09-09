@@ -222,3 +222,7 @@ footer {
 .w2:hover {
   opacity: 40%;
 }
+
+.package_margin {
+  margin-top: -2rem;
+}
